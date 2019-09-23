@@ -1,0 +1,57 @@
+#zadanie 1
+
+a=int(input())
+b=int(input())
+c=a*a+b*b
+print(c)
+
+#zadanie 2
+
+a=int(input())
+b=int(input())
+c=(a+b)*(a+b)
+print(c)
+
+#zadanie 3
+
+a=int(input())
+b=int(input())
+c=(a-b)*(a**2+a*b+b**2)
+print(c)
+#lub
+d=(a-b)*(a-b)*(a-b)
+print(d)
+
+#zadanie 4
+
+a=int(input())
+b=int(input())
+c=int(input())
+d=a*b*c
+print(d)
+
+#zadanie 5
+
+a=int(input())
+b=int(input())
+c=float((2*(a+b))*(20/100))
+print(c)
+
+d=float(((a+b)+(a+b))/5)
+e=float((a+b)*(40/100))
+print(d)
+print(e)
+
+#zadanie 6
+
+a=int(input())
+b=float(a-(a*(23/100)))
+print(b)
+c=float(a*(23/100))
+
+#zadanie 7
+
+a=int(input())
+b=int(input())
+c=float(a%b)
+print(c)
