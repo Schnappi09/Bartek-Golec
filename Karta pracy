@@ -1,36 +1,19 @@
-#zadanie 1
+a=int(input())
+b=int(input())
+print(a*a+b*b)
 
 a=int(input())
 b=int(input())
-c=a*a+b*b
-print(c)
-
-#zadanie 2
+print((a+b)*(a+b))
 
 a=int(input())
 b=int(input())
-c=(a+b)*(a+b)
-print(c)
-
-#zadanie 3
-
-a=int(input())
-b=int(input())
-c=(a-b)*(a**2+a*b+b**2)
-print("wzór skróconego mnożenia",c)
-#lub
-d=(a-b)*(a-b)*(a-b)
-print("zwykłe wymnożenie",d)
-
-#zadanie 4
+print=(a-b)*(a-b)*(a-b)
 
 a=int(input())
 b=int(input())
 c=int(input())
-d=a*b*c
-print(d)
-
-#zadanie 5
+print(a*b*c)
 
 a=int(input())
 b=int(input())
@@ -41,73 +24,42 @@ e=float((a+b)*(40/100))
 print(d)
 print(e)
 
-#zadanie 6
-
 a=int(input())
-b=float(a-(a*(23/100)))
-print(b)
-c=float(a*(23/100))
-
-#zadanie 7
+print(float(a-(a*(23/100))))
 
 a=int(input())
 b=int(input())
-c=float(a%b)
-print(c)
+print(float(a%b))
 
-#3.3
-
-#a)
 print(3*7/2-1)
-#b)
 print(3*7.0/2-1)
-#c)
 print((3*7)/2-1)
-#d)
 print(3*(7/2.0-1))
-#e)
 print(3*(7/2)-1)
-#f)
 print(3*7.0/(2-1))
-#g)
 print(124%12-2*4)
-#h)
 print(4*105%10/2*108)
-#i)
 print((-8-13*2)/2.5)
-#j)
 Import math
 print((pow(2.5,3)+17%5)-math.sqrt(4))
-#k)
 print(12%5+2%5)
-#l)
 print(5+4*3.0/5)
-#m)
 print(2%5*3-4)
-#n)
 print(7/3%2+6)
-#o)
 print(10-4+2/2*3)
-#p)
 print(11/3%5+1)
-#q)
 print(4-5/4.0*2)
 
-#3.4
-
-#a)
 a=int(input())
 b=(int(input()))
 import math
 print(math.sqrt(7/(a**3+math.cos(b))))
 
-#b)
 a=int(input())
 b=int(input())
 import math
 print(math.sin(((a+b)**4)/(math.sqrt(11)+1)))
 
-#c)
 import math
 a=int(input())
 print(((math.cos(a+1))/(math.sqrt(5)+3))**3)
