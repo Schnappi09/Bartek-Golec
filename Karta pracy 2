@@ -30,6 +30,7 @@ if c<b and c>a or c>b and c<a:
 else:
   print("NIE")
 
+"""
 #TO JESZCZE NIE JEST ZROBIONE
 p=int(bool(input("Podaj liczbe pierwszą")))
 a=int(input())
@@ -40,4 +41,19 @@ if p>1 and p/1==p and p/p==1:
   else:
     print("NIE")
 else:
-  print("To nie liczba pierwsza")   
+  print("To nie liczba pierwsza") 
+"""
+#czy liczba jest pierwsza
+"""
+n=int(input())
+flag=0
+for i in range(2,n):
+    if n%i==0:
+        flag=1
+if flag==1:
+    print("nie")
+else:
+    print("tak")
+"""
+
+  
