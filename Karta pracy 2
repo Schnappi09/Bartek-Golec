@@ -42,31 +42,33 @@ else:
   print("NIE")
 """
 
-#zadanie5
-"""
-#TO JESZCZE NIE JEST ZROBIONE
-p=int(bool(input("Podaj liczbe pierwszą")))
-a=int(input())
-if p>1 and p/1==p and p/p==1:
-  b=bool((a**p-a)%p)==0
-  if b==True:
-    print("TAK")
-  else:
-    print("NIE")
-else:
-  print("To nie liczba pierwsza") 
-"""
-#czy liczba jest pierwsza
-"""
-n=int(input())
+#zadnie 5
+""" 
+p=int(input("Podaj P"))
 flag=0
-for i in range(2,n):
-    if n%i==0:
+a=int(input("Podaj A"))
+for i in range(2,p):
+    if p%i==0:
         flag=1
 if flag==1:
-    print("nie")
-else:
-    print("tak")
+    print("nie jest  to liczba pierwsza")
+elif (a**p-a)%p==0:
+  print("spełnia małe twierdzenie fermata")
 """
+ 
 
-  
+#zadanie 6
+"""
+p=int(input("Podaj początek "))
+k=int(input("Podaj koniec "))
+s=int(input("Podaj długość skoku "))
+if p>k:
+  print(p,k,s,"Początek nie może być większy niż koniec")
+elif p+3*s>k:
+  print(p,k,s,end=" " "tak ")
+  print("Bajtożabka skoczy",(p+3*s)-k,"za daleko")
+elif p+3*s<k:
+  print(p,k,s,"Nie Bajtożabce do końca zabrakło",k-(p+3*s))
+elif p+3*s==k:
+  print(p,k,s,"Tak Bajtożabka idealnie skoczy")
+"""
