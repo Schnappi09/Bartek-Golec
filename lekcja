@@ -9,7 +9,7 @@ for i in range(6):
     else:
         print("^^",end="")
 """
-#1.28 b)
+#1.28 b)-pomocnicze
 """
 for i in range(6):
     print("*"*i)
