@@ -1,9 +1,14 @@
+#zadanie 1
+"""
 a=int(input())
 if a%3==0:
   print("TAK")
 else:
   print("NIE")
+"""
 
+#zadanie 2
+"""
 a=int(input())
 if a>99 and a<1000:
   print("TAK")
@@ -14,14 +19,20 @@ if a<18:
   print("NIE")
 else:
   print("TAK")
+"""
 
+#zadanie 3
+"""
 a=limit=int(20000)
 b=int(input())
 if b>a:
   print("NIE")
 else:
   print("TAK")
+"""
 
+#zadanie 4
+"""
 a=int(input())
 b=int(input())
 c=int(input())
@@ -29,7 +40,9 @@ if c<b and c>a or c>b and c<a:
   print("TAK")
 else:
   print("NIE")
+"""
 
+#zadanie5
 """
 #TO JESZCZE NIE JEST ZROBIONE
 p=int(bool(input("Podaj liczbe pierwszą")))
