@@ -1,11 +1,16 @@
+
 #1.28 b)
+"""
 for i in range(6):
     for j in range(i):
         print("*",end="")
-    print("&&""^^",end="")
-
+    if i%2==0:
+        print("&&",end="")
+    else:
+        print("^^",end="")
 """
 #1.28 b)
+"""
 for i in range(6):
     print("*"*i)
 """ 
