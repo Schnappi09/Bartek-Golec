@@ -1,1 +1,9 @@
+#zadanie 1
+"""
+n=int(input())
+a=int(1)
+for i in range(n):
+  a=a**3+3
+  print(a) 
+"""
 
