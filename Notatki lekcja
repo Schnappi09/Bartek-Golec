@@ -1,3 +1,70 @@
+#funkcja zwraca iloczyn liczb nieparzystych
+def iloczynnieparzystych():
+  s=0
+  for i in range(0,10,1):
+    s=s+i
+    return s
+print(iloczynnieparzystych())
+#funkcja zwracająca sume cyfr parzystych
+"""
+def sumacyfrparzystych():
+  s=0
+  for i in range(2,10,2):
+    s= s+i
+    return s
+print(sumacyfrparzystych()) 
+  """  
+
+#funkcja zwraca(tak pisać funkcje)
+"""
+def podwojonasuma(c,d):
+  return(c+d)*2
+x=int(input())
+y=int(input())
+print(podwojonasuma(x,y))
+"""
+
+#prawidłowe
+"""
+def podwojonasuma(a,b):
+  print((a+b)*2)
+x=int(input())
+y=int(input())
+podwojonasuma(x,y)
+"""
+
+"""
+underscore podwojona suma(zalecane do zmiennej)
+camel podwojona suma(zalecane do funkcji)
+"""
+
+"""
+#napisz funkcje obliczajaca podwojonąsume dwóch liczb
+def podsum(x,y):
+  print((x+y)*2)
+
+x=int(input())
+y=int(input())
+podsum(x,y)
+"""
+#parametr do funkcji
+"""
+def przyzywaj(imie,nazwisko):
+  print("witaj szanowny",imie,nazwisko)
+
+imie=input()
+nazwisko=input()
+przyzywaj(imie,nazwisko)
+"""
+
+#deklaracja, definicja i wywołanie funkcji
+"""
+def lol():
+  for i in range(5):
+    print("cześć lolu")
+
+lol()
+"""
 
 #czy liczba jest pierwsza
 """
