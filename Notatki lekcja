@@ -1,3 +1,19 @@
+#gra losouje 
+"""
+n=int(input())
+
+from random import randrange
+print(randrange(0,10))
+if n==randrange(0,10):
+  print("Trafiłeś",n)
+"""
+#generowanie liczb losowych
+
+"""
+from random import randrange
+print(randrange(0,10,2))
+"""
+
 #kartkówka
 """
 n=int(input())
