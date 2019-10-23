@@ -23,6 +23,15 @@ for i in range(1,n+1):
 """
 
 """
+#zadanie 5 (jeszcze nie skonczone)
+x=int(input())
+n=int(input())
+if x>0 and x<n:
+  for i in range(1,n+1):
+    print(i!=x)
+"""
+
+"""
 #zadanie 6
 n=int(input())
 a=0
