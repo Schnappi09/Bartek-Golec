@@ -1,3 +1,66 @@
+#SPRAWDZIAN PRZYKŁADOWY
+"""
+#zad 1
+a = 5
+b = a - 4
+for i in range(5):
+  a = a + b + i
+b=a+b
+a=b+b
+print(a,b)
+#zad 2
+a=4
+for i in range(n):
+  if i&2=0
+      a=a+1
+prynt(a)
+
+
+#zad 3 oblicz sume trycyfrowych parzystych wielokrotności 13
+s=0
+for i in range(100,1000):
+  if i%13==0 and i%2==0:
+    s=s+i
+print(s)
+
+
+#zad 4 sprawdź czy pierwsza wpisana liczba a jest wieksza
+#niż 30% sumy dwóch kolejnych wpisanych b i c
+
+a=int(input())
+b=int(input())
+b=int(input())
+if a>(0.3*(b+c):
+      print("TAK")
+else:
+      print("NIE")
+
+
+#zad 5 oblicz sume
+n=int(input())
+s=0
+for i in range(n):
+  s=s+(2*i+3)
+print(1/s)
+"""
+
+#wartość bezwzględna
+"""
+from math import fabs
+print(fabs(10-100))
+"""
+
+#sprawdź rozpiętość 2-elementowego zbioru losowych liczb trzycyfrowych
+"""
+from random import randrange
+a=randrange(100,1000)
+b=randrange(100,1000)
+if a>b:
+  print(a,b,(a-b))
+else:
+  print(a,b,(b-a))
+"""
+
 #gra losouje 
 """
 n=int(input())
