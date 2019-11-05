@@ -1,3 +1,59 @@
+#1.34 a)
+def ra(n):
+    if n==1:
+        return 4    
+    k=ra(n-1)+3
+    print(n*k)
+    return n
+   
+
+print(ra(5))
+
+"""
+#1.35 a)
+n=int(input())
+
+def reku1(n):
+    if n==1:
+        return 2
+    return 3*reku1(n-1)+0.5
+print(reku1(n))
+#b)
+def rb(n):
+    if n==1:
+        return 0.5
+    if n==2:
+        return 1
+    return 3*ra(n-2)+ra(n-1)
+#e)
+def re(n):
+    if n==1:
+        return 1
+    if n==2:
+        return 2
+    if n==3:
+        return 3
+    return re(n-3)+2*re(n-1)
+#c)
+def rc(n):
+    if n==1:
+        return 2
+    if n==2:
+        return -4
+    return rc(n-2)+2*rc(n-1)+0.5
+#d)
+def rd(n):
+    if n==1:
+        return -1.5
+    if n==2:
+        return 0
+    if n==3:
+        return 1.5
+    return 2*rd(n-3+rd(n-2)-rd(n-1)
+                
+"""
+
+
 ##########################pygame
 ################
 #idea rekurencji
