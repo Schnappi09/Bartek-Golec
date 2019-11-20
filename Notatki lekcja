@@ -1,4 +1,34 @@
 
+liczby1-10
+a=1
+while a<=10:
+    print(a)
+    a+=1
+liczby30-15
+a=30
+while a>14:
+    print(a)
+    a-=1
+liczby dwucyfrowe parzyste
+a=10
+while a<100:
+    print(a)
+    a+=2
+suma liczb dwucyfrowych parzystych
+a=10
+s=0
+while a<100:
+    s=s+a
+    a+=1
+print(s)
+
+n=int(input())
+w=0
+while w>0:
+    w=w+n&10
+    n=n//10
+print(n)
+
 def nwd_m(a,b):
     while b>0:
         a,b=b,a%b
