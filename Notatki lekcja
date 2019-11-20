@@ -1,4 +1,64 @@
 
+def nwd_m(a,b):
+    while b>0:
+        a,b=b,a%b
+    return a
+
+
+def nww(a,b):
+    r=(a*b)/nwd_m(a,b)
+    return r
+def nwd_o(a,b):
+    while a!=b:
+        if a>b:
+            a-=b
+        if b>a:
+            b-=a
+def nwd_or(a,b):
+    if a==b:
+        return a
+    if a>b:
+        print(nwd(a-b,b))
+    else:
+        print(nwd_or(a,b-a))
+
+
+def nwd_mr(a,b):
+    if b==0:
+        return a
+    return nwd_mr(b,a%b)
+n=-1
+while n!=0:
+    print("""
+    Wybierz metodę:
+    1-nwd odejmowanie
+    2-nwd modulo
+    3-nwd odejmowanie rekurencyjne
+    4-nwd modulo rekurencyjne
+    5-nww
+    Aby zakończyć wybierz 0
+    """)
+    n=int(input())
+    print("podaj liczby")
+    a=int(input())
+    b=int(input())
+    if n==1:
+        print(nwd_o(a,b))
+    if n==2:
+        print(nwd_m(a,b))
+    if n==3:
+        print(nwd_or(a,b))
+    if n==4:
+        print(nwd_mr(a,b))
+
+
+a=1
+while a<=10:
+    print("a")
+    a+=1
+
+
+
 """
 #1.35 a)
 n=int(input())
