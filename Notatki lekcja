@@ -1,4 +1,48 @@
 
+# #listy podstawy
+
+# liczby=[4,5,8,7]
+# print(liczby[2])
+
+# liczby=[4,5,8,7]
+# print(liczby[-2])
+
+# liczby=[4,5,8,7]
+# print(liczby[:2])
+
+# liczby=[4,5,8,7]
+# print(liczby[0:2])
+
+# liczby=[4,5,8,7]
+# print(liczby[0:2:2])
+
+# liczby=[4,5,8,7]
+# print(liczby[::2])
+
+# liczby=[4,5,8,7]
+# print(liczby[:])
+
+# liczby=[4,5,8,7]
+# print(liczby[2])
+
+# liczby=[4,5,8,7]
+# liczby.sort()
+# print(liczby)
+
+# liczby=[4,5,8,7]
+# liczby.sort()
+# liczby.reverse()
+# print(liczby)
+
+# liczby=[4,5,8,7]
+# print(len(liczby))
+
+
+liczby=[4,5,8,9,9,9,1,2]
+liczby.sort()
+print(liczby[-liczby.count(liczby[-1])-1])
+
+
 liczby1-10
 a=1
 while a<=10:
