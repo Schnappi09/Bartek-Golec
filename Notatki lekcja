@@ -1,3 +1,10 @@
+def newton_rapson2(p,E):
+    a=p
+    b=1
+    while a-b>E:
+        a=(a+b)/2
+        b=p/a
+    return a
 
 # #listy podstawy
 
