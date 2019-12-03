@@ -1,3 +1,16 @@
+def f(x):
+    return x**2-2*x+5
+
+def metodaprotokatow(p,q,n):
+    dl=(q-p)/n
+    s=0
+    for i in range(n):
+        s+= f(p + i*dl + dl/2 )
+    return s * dl
+
+
+print(metodaprotokatow(2,10,4))
+
 def newton_rapson2(p,E):
     a=p
     b=1
