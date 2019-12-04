@@ -1,5 +1,20 @@
 
 def f(x):
+    return 2*x-20
+    
+def bisekcja(p,q,E):
+    c=(p+q)/2
+    while f(c)!=0 and q-p>E:
+        if f(p)*f(c)<0:
+            q=c
+        else:
+            p=c
+        c=(p+q)/2
+    return c
+
+print(bisekcja(3,11,0.001))
+
+def f(x):
     return x**2-3*x+4
 
 def metodatrapezow(p,q,n):
