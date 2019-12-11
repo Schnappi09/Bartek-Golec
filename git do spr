@@ -1,0 +1,107 @@
+### 1 zadanie
+#a)
+def fa(x):
+    return (1/2)*x+1
+def metodaprotokatow(p,q,n):
+    dl=(q-p)/n
+    s=0
+    for i in range(n):
+        s+= fa(p + i*dl + dl/2 )
+    return s * dl
+print(metodaprotokatow(0,6,6))
+#b)
+def fb(x):
+    return (1/4)*x**2+x-7
+def metodaprotokatow(p,q,n):
+    dl=(q-p)/n
+    s=0
+    for i in range(n):
+        s+= fb(p + i*dl + dl/2 )
+    return s * dl
+print(metodaprotokatow(4,8,4))
+#c)
+def fc(x):
+    return -x**2+6*x+5
+def metodaprotokatow(p,q,n):
+    dl=(q-p)/n
+    s=0
+    for i in range(n):
+        s+= fc(p + i*dl + dl/2 )
+    return s * dl
+print(metodaprotokatow(1,9,4))
+###  2 zadanie 
+def nwd_o(a,b):
+    while a!=b:
+        if a>b: a-=b
+        if b>a: b-=a
+    return a
+def nwd_m(a,b):
+    while b>0:
+        a, b = b, a%b
+    return a
+def nww_m(a,b):
+    return a*b/nwd_m(a,b)
+def nww_o(a,b):
+    return a*b/nwd_o(a,b)
+#a)
+print(nwd_o(17,18),nww_o(17,18))
+print(nwd_m(17,18),nww_m(17,18))
+#b)
+print(nwd_o(36,50),nww_o(36,50))
+print(nwd_m(36,50),nww_m(36,50))
+#c)
+print(nwd_o(144,180),nww_o(144,180))
+print(nwd_m(144,180),nww_m(144,180))
+### 3 zadanie
+def newton_rapson2(p,E):
+    a=p
+    b=1
+    while a-b>E:
+        a=(a+b)/2
+        b=p/a
+    return a
+#a)
+print(newton_rapson2(51,0.001))
+#b)
+print(newton_rapson2(81,0.001))
+### 4 zadanie
+#aa)
+def faa(x):
+    return 4*x-15
+def bisekcja(p,q,E):
+    c=(p+q)/2
+    while fbb(c)!=0 and q-p>E:
+        if faa(p)*fbb(c)<0:
+            q=c
+        else:
+            p=c
+        c=(p+q)/2
+    return c
+
+print(bisekcja(0,16,0.01))
+#bb)
+def fbb(x):
+    return x**2-4*x-6
+def bisekcja(p,q,E):
+    c=(p+q)/2
+    while fbb(c)!=0 and q-p>E:
+        if fbb(p)*fbb(c)<0:
+            q=c
+        else:
+            p=c
+        c=(p+q)/2
+    return c
+print(bisekcja(2,10,0.01))
+#cc)
+def fcc(x):
+    return x**3-x**2+2*x-12
+def bisekcja(p,q,E):
+    c=(p+q)/2
+    while fcc(c)!=0 and q-p>E:
+        if fcc(p)*fcc(c)<0:
+            q=c
+        else:
+            p=c
+        c=(p+q)/2
+    return c
+print(bisekcja(0,8,0.01))
