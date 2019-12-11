@@ -1,34 +1,40 @@
 ### 1 zadanie
-#a)
-def fa(x):
-    return (1/2)*x+1
 def metodaprotokatow(p,q,n):
     dl=(q-p)/n
     s=0
     for i in range(n):
         s+= fa(p + i*dl + dl/2 )
     return s * dl
+def metodaprotokatownad(p,q,n):
+    dl=(q-p)/n
+    s=0
+    for i in range(n):
+        s+= fa(p + i*dl)
+    return s * dl
+ def metodaprotokatownied(p,q,n):
+    dl=(q-p)/n
+    s=0
+    for i in range(n):
+        s+= fa(p + i*dl+dl)
+    return s * dl
+    #a)
+def fa(x):
+    return (1/2)*x+1
 print(metodaprotokatow(0,6,6))
+print(metodaprotokatownad(0,6,6))
+print(metodaprotokatownied(0,6,6))
 #b)
 def fb(x):
     return (1/4)*x**2+x-7
-def metodaprotokatow(p,q,n):
-    dl=(q-p)/n
-    s=0
-    for i in range(n):
-        s+= fb(p + i*dl + dl/2 )
-    return s * dl
 print(metodaprotokatow(4,8,4))
+print(metodaprotokatownad(4,8,4))
+print(metodaprotokatownied(4,8,4))
 #c)
 def fc(x):
     return -x**2+6*x+5
-def metodaprotokatow(p,q,n):
-    dl=(q-p)/n
-    s=0
-    for i in range(n):
-        s+= fc(p + i*dl + dl/2 )
-    return s * dl
 print(metodaprotokatow(1,9,4))
+print(metodaprotokatownad(1,9,4))
+print(metodaprotokatownied(1,9,4))
 ###  2 zadanie 
 def nwd_o(a,b):
     while a!=b:
@@ -105,3 +111,4 @@ def bisekcja(p,q,E):
         c=(p+q)/2
     return c
 print(bisekcja(0,8,0.01))
+
