@@ -1,3 +1,36 @@
+#wypełnienie n x m liczbami naturalnymi od 1
+n=int(input())
+m=int(input())
+d=[[0]*m]*n
+x=0
+for i in range(n):
+    for j in range(m):
+        d[i][j]=x
+        x+=1
+print(d)
+
+#głupi sposob
+c=[[0]*4]*3
+c[0][0]=1
+c[0][1]=4
+c[0][2]=7
+c[0][3]=10
+c[1][0]=2
+c[1][1]=5
+c[1][2]=8
+c[1][3]=11
+c[2][0]=3
+c[2][1]=6
+c[2][2]=9
+c[2][3]=12
+print(c)
+#lepszy banał
+b=[[8,1],[2,3],[6,7]]
+print(b[2][1])
+
+#banał z list
+a=[4,2,8,1]
+print(a)
 
 def f(x):
     return 2*x-20
