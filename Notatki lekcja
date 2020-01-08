@@ -1,3 +1,41 @@
+
+
+from random import randrange
+n=4
+matrix4=[[randrange(20) for i in range(n)] for j in range(n)]
+print(matrix4)
+s=0
+neo=[0]*n
+for i in range(n):
+    for j in range(n):
+        s+=matrix4[i][j]
+    neo[i]=s
+    s=0
+        
+print(neo)
+
+from random import randrange
+n=4
+matrix4=[[randrange(20) for j in range(n)] for i in range(n)]
+print(matrix4)
+s=0
+for i in range(n):
+    for j in range(n):
+        s+=matrix4[i][j]       
+print(s)
+
+matrix=[[4]*5]*3
+matrix[0][0]=0
+print(matrix)
+
+matrix2=[[5 for i in range(4)] for j in range(3)]
+matrix2[0][1]=9
+print(matrix2)
+
+matrix3=[[5]*3 for i in range(4)]
+matrix3[0][0]=0
+print(matrix3)
+
 #wypełnienie n x m liczbami naturalnymi od 1
 n=int(input())
 m=int(input())
