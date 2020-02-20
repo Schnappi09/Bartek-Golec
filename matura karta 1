@@ -1,0 +1,38 @@
+from random import randrange
+n=int(input())
+s=0
+grzyb=[randrange(1,100) for i in range(n)]
+for i in grzyb:
+    s+=i
+print(grzyb)
+print(s/n)
+
+n=int(input())
+grzyb7=[]
+for i in grzyb7:
+    grzyb7.append(n)
+print(grzyb7)
+s=0
+for e in grzyb7:
+    s+=i
+print(s/(len(grzyb7)))
+
+
+n=int(input())
+t=list(map(int, input().split()))
+for i in t:
+    s+=i
+print(s/n)
+
+
+def arytm(T):
+    res = True
+    for i in range(1,n-1:)
+        if T[i]-T[i-1]!=T[i+1]-T[i]:
+            res= False
+            break
+    return res
+
+n=int(input())
+t=list(map(int, input().split()))
+n=len(t)
